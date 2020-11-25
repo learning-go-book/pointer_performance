@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-var x int64
+var x byte
 
 //go:noinline
 func BenchmarkPointer10In(b *testing.B) {
@@ -37,7 +37,7 @@ func BenchmarkValue10Out(b *testing.B) {
 }
 
 type v10 struct {
-	data [10]int64
+	data [10]byte
 }
 
 //go:noinline
@@ -95,7 +95,7 @@ func BenchmarkValue100Out(b *testing.B) {
 }
 
 type v100 struct {
-	data [100]int64
+	data [100]byte
 }
 
 //go:noinline
@@ -153,7 +153,7 @@ func BenchmarkValue1_000Out(b *testing.B) {
 }
 
 type v1_000 struct {
-	data [1_000]int64
+	data [1_000]byte
 }
 
 //go:noinline
@@ -211,7 +211,7 @@ func BenchmarkValue100_000Out(b *testing.B) {
 }
 
 type v100_000 struct {
-	data [100_000]int64
+	data [100_000]byte
 }
 
 //go:noinline
@@ -269,7 +269,7 @@ func BenchmarkValue1_000_000Out(b *testing.B) {
 }
 
 type v1_000_000 struct {
-	data [1_000_000]int64
+	data [1_000_000]byte
 }
 
 //go:noinline
@@ -327,7 +327,7 @@ func BenchmarkValue10_000_000Out(b *testing.B) {
 }
 
 type v10_000_000 struct {
-	data [10_000_000]int64
+	data [10_000_000]byte
 }
 
 //go:noinline
